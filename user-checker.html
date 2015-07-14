@@ -108,7 +108,7 @@ comments: false
               break
           }
 
-          return form_result('success', 'This account is a verified ' + rank + ' account and validated through Twitch\'s API. <br/><br/>You can see the direct API result <a href="https://api.twitch.tv/kraken/users/' +  encodeURIComponent(user) + '">here</a>.')
+          return form_result('success', 'This account is a verified <img src="https://chat-badges.s3.amazonaws.com/' + rank.replace('_', '') + '.png" title="This badge will be in front of a ' + rank + ' username in chat."> ' + rank + ' account and validated through Twitch\'s API. <br/><br/>You can see the direct API result <a href="https://api.twitch.tv/kraken/users/' +  encodeURIComponent(user) + '">here</a>.')
         }
 
         var message = 'This account is a standard Twitch account,<br/> if this user is informing you that they are a member of the Twitch Staff, Admin or Global Moderation (etc) team, <br/> they are likely malicious and should be avoided. </br>Please consider filing a <a href="http://help.twitch.tv/customer/portal/articles/725568-how-to-file-a-grief-report">grief report</a>. <br/><br/> You can see the direct API result <a href="https://api.twitch.tv/kraken/users/' +  encodeURIComponent(user) + '">here</a>.'
